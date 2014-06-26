@@ -1,0 +1,9 @@
+<p>Old Item: <%= items[iden] %></p><br/>
+<form action="/items/<%= iden %>/edit" method="post">
+  <label for="item">Change Item to:</label>
+  <input type="text" id="item" name="item_changed" />
+  <button type="submit">CHANGE ITEM</button>
+</form>
+<form action="/items/<%= iden %>/delete" method="post">
+  <button type="submit">DELETE ITEM</button>
+</form>
