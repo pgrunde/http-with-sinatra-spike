@@ -1,4 +1,9 @@
 <a href="/items/new">New Items</a>
+<form action="/items" type="post">
+  <label for="search"></label>
+  <input type="text" id="search" name="filter" />
+  <button type="submit">Search in List</button>
+</form>
 <ul>
   <% items.each_with_index do |item, index| %>
     <li><a href="/items/<%= index %>"><%= item %></a></li>
